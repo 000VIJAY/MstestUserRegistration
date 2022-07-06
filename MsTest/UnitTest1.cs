@@ -36,5 +36,13 @@ namespace MsTest
             bool res = pattern.ValidateMobileNumber("91 8847283564");
             Assert.AreEqual(expexted, res);
         }
+        [TestMethod]
+        public void UserPasswordTest()
+        {
+            Pattern pattern = new Pattern();
+            bool expexted = true;
+            bool res = pattern.ValidatePassword("Vijayu@2");
+            Assert.AreEqual(expexted , res);
+        }
     }
 }

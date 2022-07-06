@@ -11,3 +11,4 @@ Console.WriteLine(GetPattern.validateLastName("Vijay89@bridge.com"));
 Console.WriteLine("Enter your Mobile Number");
 string mobile = Console.ReadLine();
 Console.WriteLine(GetPattern.ValidateMobileNumber(mobile));
+Console.WriteLine(GetPattern.ValidatePassword("RAhulk@2"));
