@@ -28,5 +28,13 @@ namespace MsTest
             bool result = pattern.validateEmail("Vijay@gmail.com");
             Assert.AreEqual(expected , result);
         }
+        [TestMethod]
+        public void UserMobileNumbertest()
+        {
+            Pattern pattern = new Pattern();
+            bool expexted = true;
+            bool res = pattern.ValidateMobileNumber("91 8847283564");
+            Assert.AreEqual(expexted, res);
+        }
     }
 }

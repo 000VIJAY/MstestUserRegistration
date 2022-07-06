@@ -8,3 +8,6 @@ string LN = Console.ReadLine();
 Console.WriteLine(GetPattern.validateLastName(LN));
 Console.WriteLine("Enter Email Name");
 Console.WriteLine(GetPattern.validateLastName("Vijay89@bridge.com"));
+Console.WriteLine("Enter your Mobile Number");
+string mobile = Console.ReadLine();
+Console.WriteLine(GetPattern.ValidateMobileNumber(mobile));
