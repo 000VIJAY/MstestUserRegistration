@@ -20,5 +20,13 @@ namespace MsTest
             bool res = patt.validateLastName("Kumar");
             Assert.AreEqual(expected, res);
         }
+        [TestMethod]
+        public void UserEmailTest()
+        {
+            Pattern pattern = new Pattern();
+            bool expected = true;
+            bool result = pattern.validateEmail("Vijay@gmail.com");
+            Assert.AreEqual(expected , result);
+        }
     }
 }

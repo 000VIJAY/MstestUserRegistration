@@ -6,3 +6,5 @@ Console.WriteLine(GetPattern.ValidateFirstName(FN));
 Console.WriteLine("Enter Last Name");
 string LN = Console.ReadLine();
 Console.WriteLine(GetPattern.validateLastName(LN));
+Console.WriteLine("Enter Email Name");
+Console.WriteLine(GetPattern.validateLastName("Vijay89@bridge.com"));
