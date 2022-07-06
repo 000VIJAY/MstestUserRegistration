@@ -12,5 +12,13 @@ namespace MsTest
             bool expected = true;
             Assert.AreEqual(expected, result);
         }
+        [TestMethod]
+        public void UserLastNameTest()
+        {
+            Pattern patt = new Pattern();
+            bool expected = true;
+            bool res = patt.validateLastName("Kumar");
+            Assert.AreEqual(expected, res);
+        }
     }
 }
