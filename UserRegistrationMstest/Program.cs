@@ -1,14 +1,22 @@
 ﻿using UserRegistrationMstest;
 Pattern GetPattern = new Pattern();
+
 Console.WriteLine("Enter First Name");
 string FN = Console.ReadLine();
-Console.WriteLine(GetPattern.ValidateFirstName(FN));
+GetPattern.ValidateFirstName(FN);
+
 Console.WriteLine("Enter Last Name");
 string LN = Console.ReadLine();
-Console.WriteLine(GetPattern.validateLastName(LN));
-Console.WriteLine("Enter Email Name");
-Console.WriteLine(GetPattern.validateLastName("Vijay89@bridge.com"));
-Console.WriteLine("Enter your Mobile Number");
-string mobile = Console.ReadLine();
-Console.WriteLine(GetPattern.ValidateMobileNumber(mobile));
-Console.WriteLine(GetPattern.ValidatePassword("RAhulk@2"));
+GetPattern.ValidateLastName(LN);
+
+Console.WriteLine("Enter Email id ");
+string Email_Id = Console.ReadLine();
+GetPattern.ValidateEmail(Email_Id);
+
+Console.WriteLine("Enter Phone number ");
+string phoneNumber = Console.ReadLine();
+GetPattern.ValidatePhoneNumber(phoneNumber);
+
+Console.WriteLine("Enter Password ");
+string passcode = Console.ReadLine();
+GetPattern.ValidatePassword(passcode);
