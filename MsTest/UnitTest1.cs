@@ -8,9 +8,11 @@ namespace MsTest
         public void UserFirstNameTest()
         {
             Pattern pattern = new Pattern();
-            string result = pattern.ValidateFirstName("Vijay");
-            string expected = "true";
-            Assert.AreEqual(expected, result);
+           
+             
+                string result = pattern.ValidateFirstName("Vijay");
+                string expected = "true";
+                Assert.AreEqual(expected, result);
         }
         [TestMethod]
         public void UserLastNameTest()

@@ -20,3 +20,6 @@ GetPattern.ValidatePhoneNumber(phoneNumber);
 Console.WriteLine("Enter Password ");
 string passcode = Console.ReadLine();
 GetPattern.ValidatePassword(passcode);
+
+CustomerValid valid = new CustomerValid();
+bool v = valid.FindCon();
