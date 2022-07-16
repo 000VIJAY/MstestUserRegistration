@@ -15,7 +15,7 @@ namespace UserRegistrationMstest
         readonly string validPassword = "(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=-])[a-zA-Z0-9!@#$%^&*()_+=-]{8,15}$";
         public string ValidateFirstName(string FirstName)
         {
-            
+  
             try
             {
                 bool v = Regex.IsMatch(FirstName, ValidName);
@@ -176,30 +176,4 @@ namespace UserRegistrationMstest
             return null;
         }
     }
-       public class CustomerInfo
-        {
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-            public string Email { get; set; }
-            public string PhoneNumber { get; set; }
-            public string password { get; set; }
-        }
-
-        public class CustomerValid
-        {
-            readonly string ValidName = "^[A-Z]{1}[A-Za-z]{3,8}";
-            List<CustomerInfo> list = new List<CustomerInfo>()
-            {
-                new CustomerInfo(){FirstName = "Vijay" , LastName = "Kumar" , Email = "vijay@gmail.com" , PhoneNumber = "91 8844337788" , password ="fdbjddb" }
-            };
-            public bool FindCon(CustomerInfo x)
-            {
-                if (x.FirstName.Equals(ValidName))
-                {
-                    return true;
-                }
-                return false;
-            }
-
-        }
 }
